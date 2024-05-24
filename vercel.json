@@ -4,18 +4,29 @@
       {
         "src": "server.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "script.js",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
-        {
-          "src": "index.html",
-          "dest": "/"
-        },
-        {
-          "src": "script.js",
-          "dest": "/"
-        }
-      ]
-    }
-  
+      {
+        "src": "/",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/submit",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/database.json",
+        "dest": "/database.json"
+      }
+    ]
+  }
   
