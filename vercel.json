@@ -6,6 +6,16 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": ["/"]
-  }
+    "routes": [
+        {
+          "src": "src/index.html",
+          "dest": "/"
+        },
+        {
+          "src": "src/script.js",
+          "dest": "/"
+        }
+      ]
+    }
+  
   
